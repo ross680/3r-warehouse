@@ -1,0 +1,121 @@
+/* Returns: the Return Generator styles, kept inside .r3ret so they don't touch Inventory. */
+.r3ret .sum{display:flex;flex-wrap:wrap;gap:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;margin:0 0 14px;overflow:hidden}
+.r3ret .sum div{padding:10px 16px;border-right:1px solid var(--line);min-width:120px}
+.r3ret .sum div:last-child{border-right:0}
+.r3ret .sum b{display:block;font-stretch:115%;font-size:22px;font-weight:850;line-height:1.1}
+.r3ret .sum span{font-size:12.5px;color:var(--ink2);font-weight:600}
+.r3ret .pick{background:var(--soft);border:1.5px solid var(--blue);border-radius:10px;padding:12px 14px;margin:0 0 14px}
+.r3ret .pick h3{margin:0 0 4px;font-size:15px}
+.r3ret .pick p{margin:2px 0}
+.r3ret .grp{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px 4px;margin:0 0 14px}
+.r3ret .grp .gh .d{font-weight:800;font-size:16px}
+.r3ret .grp .gh{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;margin-bottom:10px}
+.r3ret .grp .pick{margin:0 0 8px}
+.r3ret .grp .warnbox{margin:0 0 8px}
+.r3ret .warnbox{background:rgba(200,65,58,.08);border:1.5px solid rgba(200,65,58,.45);border-radius:10px;padding:12px 14px;margin:0 0 14px}
+.r3ret .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;padding:12px 2px;border-top:1px solid var(--line)}
+.r3ret .row.best{background:var(--soft);border-radius:8px;padding:12px 10px;border-top-color:transparent}
+.r3ret .row .d{font-weight:700;font-size:15.5px}
+.r3ret .row .m{font-size:13.5px;color:var(--ink2)}
+.r3ret .row .m b{color:var(--ink);font-weight:700}
+.r3ret .row .act{display:flex;align-items:flex-start;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.r3ret .row .act input{width:70px;padding:6px 8px}
+.r3ret .rem{text-align:right;font-size:13px;color:var(--ink2);white-space:nowrap}
+.r3ret .rem b{font-size:18px;color:var(--ink);font-stretch:112%}
+.r3ret .tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px}
+.r3ret .tag{font-size:12px;font-weight:700;border-radius:5px;padding:2px 7px;white-space:nowrap}
+.r3ret .t-b{background:rgba(38,164,203,.14);color:var(--blue-d)}
+.r3ret .t-w{background:rgba(224,138,30,.15);color:var(--warn)}
+.r3ret .t-r{background:rgba(200,65,58,.12);color:var(--bad)}
+.r3ret .t-g{background:rgba(44,154,91,.13);color:var(--good)}
+.r3ret .t-n{background:var(--line);color:var(--ink2)}
+:root[data-theme="dark"] .r3ret .t-b{color:var(--blue-l)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .r3ret .t-b{color:var(--blue-l)}
+}
+.r3ret .note{font-size:12.5px;color:var(--warn);margin-top:3px}
+.r3ret a.src{color:var(--blue-d);font-weight:700;font-size:13px}
+:root[data-theme="dark"] .r3ret a.src{color:var(--blue-l)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .r3ret a.src{color:var(--blue-l)}
+}
+.r3ret .msg{font-size:13px;font-weight:700;color:var(--bad);width:100%;text-align:right}
+.r3ret .vend{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:0 0 18px;overflow:hidden}
+.r3ret .vh{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line);border-left:5px solid var(--blue)}
+.r3ret .vh h2{margin-right:auto}
+.r3ret .vh label{font-size:12.5px;font-weight:700;color:var(--ink2);display:flex;flex-direction:column;gap:2px}
+.r3ret .vh input,.r3ret .vh select{padding:6px 8px;font-size:14px}
+.r3ret .vh .ra{width:150px}
+.r3ret .cat{padding:8px 16px 2px;font-weight:800;font-size:13px;color:var(--ink2);background:var(--bg);border-top:1px solid var(--line)}
+.r3ret .tw{overflow-x:auto}
+.r3ret table{border-collapse:collapse;width:100%;font-size:14px}
+.r3ret td.ds{min-width:220px}
+.r3ret th{text-align:left;font-size:12px;color:var(--ink2);font-weight:700;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+.r3ret td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+.r3ret td.n,.r3ret th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.r3ret td input.qi{width:64px;padding:5px 7px;text-align:right}
+.r3ret td .who{font-size:12px;color:var(--ink2)}
+.r3ret .st{font-size:12.5px;font-weight:700;white-space:nowrap}
+.r3ret .vf{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;padding:12px 16px;background:var(--bg)}
+.r3ret .vf .tot{margin-right:auto;font-size:14px}
+.r3ret .vf .tot b{font-size:18px;font-stretch:112%}
+.r3ret .diff-bad{color:var(--bad);font-weight:800}
+.r3ret .diff-ok{color:var(--good);font-weight:800}
+.r3ret .empty{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:26px;text-align:center;color:var(--ink2)}
+.r3ret .banner{background:rgba(224,138,30,.12);border:1px solid rgba(224,138,30,.4);border-radius:10px;padding:10px 14px;margin:0 0 14px;font-size:14px}
+.r3ret .about{max-width:76ch}
+.r3ret .about li{margin:4px 0}
+@media (max-width:640px){.r3ret .tw table,.r3ret .tw tbody,.r3ret .tw tr,.r3ret .tw td{display:block}
+.r3ret .tw thead{display:none}
+.r3ret .tw tr{padding:10px 16px;border-bottom:1px solid var(--line)}
+.r3ret .tw td{border:0;padding:3px 0;display:flex;justify-content:space-between;gap:12px;text-align:right}
+.r3ret .tw td.ds{display:block;text-align:left;font-weight:700;min-width:0}
+.r3ret .tw td[data-l]::before{content:attr(data-l);color:var(--ink2);font-size:12.5px;font-weight:600;text-align:left}
+.r3ret .tw td.ds::before,.r3ret .tw td[data-l=""]::before{display:none}
+.r3ret .tw td.cat{display:block;text-align:left;margin:0 -16px;padding:8px 16px 4px}
+.r3ret .tw tr:has(td.cat){padding:0;border:0}
+.r3ret .vh .ra{width:100%}
+.r3ret .vh label{flex:1 1 140px}
+.r3ret .row{grid-template-columns:1fr}
+.r3ret .row .act{justify-content:flex-start}
+.r3ret .rem{text-align:left}
+.r3ret .sum div{flex:1 1 45%;border-bottom:1px solid var(--line)}
+}
+.r3ret .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 14px}
+.r3ret .panel h2{margin:0 0 10px;font-size:17px}
+.r3ret .panel summary{cursor:pointer}
+.r3ret .ph{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-bottom:10px}
+.r3ret .ph h2{margin:0}
+.r3ret .ph .sp{flex:1}
+.r3ret .fl{display:flex;flex-direction:column;gap:3px;font-size:12.5px;font-weight:700;color:var(--ink2)}
+.r3ret .fl input,.r3ret .fl select{font-weight:400;font-size:15px;min-width:0}
+.r3ret .maps{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end;margin:10px 0 0}
+.r3ret .maps .fl{flex:1 1 180px}
+.r3ret .chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px}
+.r3ret .chip{display:flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:5px 12px;font-size:13.5px;font-weight:600;cursor:pointer}
+.r3ret .bars{display:flex;flex-direction:column;gap:4px}
+.r3ret .bar{display:grid;grid-template-columns:minmax(150px,240px) minmax(80px,1fr) minmax(0,auto);gap:4px 12px;align-items:center;background:none;border:0;border-radius:6px;padding:5px 6px;text-align:left;font:inherit;color:inherit}
+.r3ret button.bar:not([disabled]){cursor:pointer}
+.r3ret button.bar:not([disabled]):hover{background:var(--soft)}
+.r3ret .bl{font-weight:700;font-size:14px}
+.r3ret .bv{font-size:13px;color:var(--ink2);white-space:nowrap}
+.r3ret .bv b{color:var(--ink);font-size:14px}
+.r3ret .bt{height:12px;background:var(--bg);border-radius:6px;overflow:hidden}
+.r3ret .bf{display:block;height:100%;background:var(--blue);border-radius:6px}
+.r3ret .bf.neg{background:var(--good)}
+.r3ret .catsel{max-width:220px;padding:5px 7px;font-size:13px}
+.r3ret .drop{background:var(--panel);border:2px dashed var(--blue);border-radius:12px;padding:22px;margin:0 0 14px}
+.r3ret .drop p{margin:0 0 12px}
+@media (max-width:640px){.r3ret .bar{grid-template-columns:1fr}
+.r3ret .bv{white-space:normal}
+.r3ret .whoami{display:none}
+.r3ret .maps .fl{flex:1 1 100%}
+}
+@media print{.r3ret .chips,.r3ret .sbar,.r3ret #spres .panel:not(:last-child){display:none!important}
+}
+
+
+@media print{
+  body.retprint .hdr,body.retprint .rec-head,body.retprint .toast,body.retprint .noprint,body.retprint .r3ret .sbar,body.retprint .r3ret .chips{display:none!important}
+  body.retprint{background:#fff;color:#000}body.retprint .r3ret{padding:0}
+  .r3ret .vend{border:0;break-inside:auto}.r3ret .vend.hide-print{display:none}.r3ret .vh{border-left:0;padding:0 0 8px}.r3ret td input.qi{border:0;padding:0;width:auto}.r3ret .vh input{border:0;padding:0}
+  .r3ret tr{break-inside:avoid}.r3ret .vh select,.r3ret .btn{display:none!important}
+}
